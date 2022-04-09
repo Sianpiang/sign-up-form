@@ -18,23 +18,23 @@
         </div>
         <div class="right">
             <div class="form-container">
-                <p>This is not a real service!!! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolor est tenetur esse minima nihil impedit necessitatibus possimus natus hic.</p>
-                <form action="#">
+                <p class="header">This is not a real service!!! Lorem adipisicing elit. Enim dolor est tenetur esse minima nihil impedit necessitatibus possimus natus hic.</p>
+                <form action="#" id="formfill">
                     <h3>Let's do this</h3>
                     <div class="row">
                         <div class="inputs">
                             <label for="first-name">First-name</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name" required>
                         </div>
                         <div class="inputs margin">
-                            <label for="last-name ">last-name</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <label for="last-name ">Last-name</label>
+                            <input type="text" name="last-name" id="last-name" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="inputs ">
                             <label for="Email">E-mail</label>
-                            <input type="email" name="Email" id="Email">
+                            <input type="email" name="Email" id="Email" required>
                         </div>
                         <div class="inputs margin">
                             <label for="ph-no">Phone Number</label>
@@ -44,16 +44,20 @@
                     <div class="row">
                         <div class="inputs">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
                         </div>
                         <div class="inputs margin">
                             <label for="confirm-pass">Confirm Password</label>
-                            <input type="password" name="confirm-pass" id="confirm-pass">
+                            <input type="password" name="confirm-pass" id="confirm-pass" required>
                         </div>
                     </div>
                 </form>
-                <button>Submit</button>
+                <div class="footer">
+                    <label for="formfill">
+                        <button>Create Account</button>
+                    </label>
                 <p>Already have an account?<a href="#">Log in</a></p>
+                </div>
             </div>
         </div>
     </div>

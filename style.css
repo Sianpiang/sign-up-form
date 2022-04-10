@@ -148,14 +148,25 @@ button:hover{
         width: 100%;
         height: 70vh;
     }
+    .info{
+        height: 0vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .form-container .header{
         text-overflow:ellipsis;
         font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
+        align-self: flex-end;
     }
     h3{
         text-align: justify;
+    }
+    .credit{
+        display: none;
     }
 }
 
@@ -179,5 +190,50 @@ button:hover{
     }
     .margin{
         margin-left: 90px;
+    }
+}
+
+@media only screen and (max-width:668px){
+    .container{
+        display: block;
+        height: 130vh;
+    }
+    .form-container{
+        margin-top: 200px;  
+    }
+    .row{
+        display: block;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .inputs{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width:668px){
+    .form-container{
+        margin-top: 300px;  
+    }
+}
+@media only screen and (max-width:395px){
+    .form-container{
+        margin-top: 400px;  
+    }
+    .info p{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:301px){
+    .form-container{
+        margin-top: 600px;  
+    }
+    .info p{
+        font-size: 10px;
     }
 }
